@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ADTS2020</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href="mystyle.css" rel="stylesheet">
+</head>
+<body>
+
+<!--navigation-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"d><img src="images/logo_wh.jpg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto"
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="document.getElementById('mod1').style.display='block'">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>              
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+<!--image slider-->
+<div id="slider" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#slider" data-slide-to="0" class="active"></li>
+    <li data-target="#slider" data-slide-to="1"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/bg0.jpg">
+      <div class="carousel-caption">
+        <h1 class="display-1 font-weight-bolder">ADTS 2020</h1>
+        <button onclick="document.getElementById('mod1').style.display='block'" style="width:auto;">LOGIN</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption">
+        <h1 class="display-1 font-weight-bolder">ADTS 2020</h1>
+      </div>
+      <img src="images/bg2.jpg">
+    </div>
+  </div>
+</div>
+
+<!--login-->
+<div id="mod1" class="modal">
+  <div class="col-sm-6 login-section">
+    <span onclick="document.getElementById('mod1').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="col-12 form-section animate" action="#" method="post">
+      <div class="input-section">
+        <i class="fa fa-user icon"></i>
+        <input type="text" class="input-field" placeholder="username" required>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="input-section">
+        <i class="fa fa-lock icon"></i>
+        <input type="password" class="input-field" placeholder="password" required>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="row justify-content-center login">
+        <button type="submit" class="btn btn-outline-light btn-lg">
+        <i class="fas fa-sign-in-alt"></i>LOGIN</button>
+      </div> 
+      <!--<button type="button" class="btn btn-outline-light btn-lg">LOGIN</button>-->
+    </form>
+    <div class="col-12 forgotpw text-center">
+      <a href="#">forgot password?</a>
+    </div>
+  </div>
+</div>
+<!--<a href="http://www.freepik.com">Designed by starline / Freepik</a>-->
+
+<!--USER WELCOME (view and edit links)-->
+
+<!--ELEVATED USER WELCOME (view, add, remove, manage links)-->
+
+<!--VIEW list of papers, status, action-->
+<div id="viewlist" class="container">
+  <h2> ADTS 2020 Papers</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th> LIST OF PAPERS </th>
+        <th> STATUS </th>
+        <th> ACTION </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--add list of papers here-->
+        <td>1. Title, Author</td>
+        <td> GRADED </td>
+        <td>
+          <p data-placement="top" data-toggle="tooltip" title="Edit">
+          <a class="btn btn-small" href=#"><i class="far fa-edit"></i>Edit</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>2. Title, Author</td>
+        <td> UNGRADED </td>
+        <td>
+          <p data-placement="top" data-toggle="tooltip" title="Review">
+          <a class="btn btn-small" href=#"><i class="far fa-edit"></i>Review</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>3. Title, Author</td>
+        <td> GRADED </td>
+        <td>
+          <p data-placement="top" data-toggle="tooltip" title="Edit">
+          <a class="btn btn-small" href=#"><i class="far fa-edit"></i>Edit</a>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <ul class="pagination justify-content-end" style="margin:20px 0">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+  
+</div>
+
+<!--REVIEW/EDIT abstract and link of paper, socring board, comment, submit-->
+<div id="review" class="input-group mb-3">
+  
+  
+</div>
+
+<!--MANAGE PAPERS (set deadline, disable, scoring, sort papers links)-->
+<div id="manage" class="container mt-3">
+  <h2> Manage Papers</h2>
+  <div class="btn-group-vertical">
+    <a class="btn btn-small" href=# onclick="document.getElementById('mod2').style.display='block'">SET DEADLINE</a>
+    <a class="btn btn-small" href=#">DISABLE SCORING</a>
+    <a class="btn btn-small" href=#">SORT PAPERS</a>
+  </div>  
+</div>
+<!--Set Deadlines-->
+<div id="mod2" class="container">
+  <div class="col-sm-6 set-deadline">
+    <span onclick="document.getElementById('mod2').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="col-12 form-section animate" action="#" method="post">
+      <div class="input-section">
+        <i class="far fa-calendar-alt"></i>
+        <input type="text" class="input-field" placeholder="DATE" required>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="input-section">
+        <i class="fas fa-clock"></i>
+        <input type="password" class="input-field" placeholder="TIME" required>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="row justify-content-center confirm">
+        <button type="submit" class="btn btn-outline-light btn-lg">
+        <i class="ffar fa-calendar-check"></i>CONFIRM</button>
+      </div> 
+    </form>
+  </div>
+</div>
+<!--Disable scoring-->
+
+<!--Sort Papers-->
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('form-section');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</body>
+</html>
