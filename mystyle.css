@@ -27,6 +27,13 @@ body {
   left: 25px;
 }
 
+.input-group {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5%;
+}
+
 .input-section {
   width: 100%;
   margin-top: 10px;
@@ -47,6 +54,15 @@ body {
 
 .form-section {
   margin-bottom: 20px;
+}
+
+.form-group {
+  margin-left: 30px;
+}
+
+.form-check-inline {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .modal {
@@ -85,7 +101,7 @@ body {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 30%;
+  width: 25%;
 }
 
 button:hover {
