@@ -56,12 +56,12 @@
         <button onclick="document.getElementById('mod1').style.display='block'" style="width:auto;">LOGIN</button>
       </div>
     </div>
-    <div class="carousel-item">
+    <!--<div class="carousel-item">
       <div class="carousel-caption">
         <h1 class="display-1 font-weight-bolder">ADTS 2020</h1>
       </div>
       <img src="images/bg2.jpg">
-    </div>
+    </div>-->
   </div>
 </div>
 
@@ -404,8 +404,58 @@
   </div>
 </div>
 
-<!--Sort Papers-->
-
+<!--View results after Sort Papers-->
+<div id="viewlist" class="container">
+  <h2> ADTS 2020 Papers</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th> LIST OF PAPERS </th>
+        <th> GRADE </th>
+        <th> RANK </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--add list of papers here-->
+        <td>1. Title, Author</td>
+        <td> GRADED </td>
+        <td>
+          <p data-placement="top" data-toggle="tooltip" title="Edit">
+          <a class="btn btn-small" href=#edit"><i class="far fa-edit"></i>Edit</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>2. Title, Author</td>
+        <td> UNGRADED </td>
+        <td>
+          <p data-placement="top" data-toggle="tooltip" title="Review">
+          <a class="btn btn-small" href=#review"><i class="far fa-edit"></i>Review</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>3. Title, Author</td>
+        <td> GRADED </td>
+        <td>
+          <p data-placement="top" data-toggle="tooltip" title="Edit">
+          <a class="btn btn-small" href=#edit"><i class="far fa-edit"></i>Edit</a>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <ul class="pagination justify-content-end" style="margin:20px 0">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+  
+</div>
 <script>
 // Disable form submissions if there are invalid fields
 (function() {
