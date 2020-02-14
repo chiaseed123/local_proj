@@ -39,8 +39,7 @@
       </ul>
     </div>
   </div>
-</nav>
-  
+</nav>  
 
 <!--image slider-->
 <div id="slider" class="carousel slide" data-ride="carousel">
@@ -53,14 +52,15 @@
       <img src="images/bg0.jpg">
       <div class="carousel-caption">
         <h1 class="display-1 font-weight-bolder">ADTS 2020</h1>
-        <button onclick="document.getElementById('mod1').style.display='block'" style="width:auto;">LOGIN</button>
+        <!--<button onclick="document.getElementById('mod1').style.display='block'" style="width:auto;">LOGIN</button>-->
       </div>
     </div>
     <!--<div class="carousel-item">
-      <div class="carousel-caption">
-        <h1 class="display-1 font-weight-bolder">ADTS 2020</h1>
-      </div>
       <img src="images/bg2.jpg">
+      <div class="carousel-caption">
+        <h3 class="display-1 font-weight-bolder">CONTACT US</h3>
+        <button onclick="document.getElementById('mod-contact-us').style.display='block'" style="width:auto;">CONTACT US</button>
+      </div>
     </div>-->
   </div>
 </div>
@@ -91,10 +91,78 @@
     </div>
   </div>
 </div>
-<!--<a href="http://www.freepik.com">Designed by starline / Freepik</a>-->
+
+<!--contact us-->
+<div id="contact-us" class="container">
+  <br>
+  <div class="row">
+		<div class="col-md-4">
+			<div class="contact-info">
+				<img src="images/contact-image.png" alt="image"/>
+				<h2>Contact Us</h2>
+				<p>We would love to hear from you!</p>
+        <p>Send us a message and we will respond as soon as posible.</p>
+        <br>
+        <b>JM Gorospe</b>
+        <p>
+          <small style="color:blue;">
+            John.Gorospe@analog.com
+          </small>
+          <br>
+          <small>
+            ADTS organizer
+          </small>
+        </p>
+        <p><small></small></p>
+        <b>Derik Lopez</b>
+        <p>
+          <small style="color:blue;">
+            Derik.Lopez@analog.com
+          </small>
+          <br>
+          <small>
+            ADTS scoring committee head
+          </small>
+        </p>
+			</div>
+		</div>
+		<form class="col-md-8 form-section">
+			<div class="contact-form">
+        <div class="form-group">
+				  <label class="control-label col-sm-2" for="name">Name:</label>
+				  <div class="col-sm-10">
+          <i class="fa fa-user ficon"></i>
+					<input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+          <div class="invalid-feedback">Please fill out this field.</div>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email">Email:</label>
+				  <div class="col-sm-10">
+          <i class="fa fa-envelope ficon"></i>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required="true">
+          <div class="invalid-feedback">Please fill out this field.</div>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment">Comment:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control-1" rows="5" id="comment"></textarea>
+				  </div>
+				</div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-outline-light btn-lg">
+            <i class="far fa-paper-plane"></i>SEND</button>
+          </div>
+        </div>
+			</div>
+		</form>
+	</div>
+  <br>
+</div>
 
 <!--USER WELCOME (view and edit links)-->
-
 <!--VIEW list of papers, status, action-->
 <div id="viewlist" class="container">
   <h2> ADTS 2020 Papers</h2>
@@ -168,27 +236,27 @@
           <form action="/action_page.php">
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="1" checked> 1 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio1" value="1" checked> 1 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="2" checked> 2 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio2" value="2" checked> 2 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="3" checked> 3 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio3" value="3" checked> 3 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="4" checked> 4 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio4" value="4" checked> 4 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="5" checked> 5 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio5" value="5" checked> 5 
                </label>
             </div>
           </form>
@@ -200,27 +268,27 @@
           <form action="/action_page.php">
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="1" checked> 1 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio1" value="1" checked> 1 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="2" checked> 2 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio2" value="2" checked> 2 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="3" checked> 3 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio3" value="3" checked> 3 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="4" checked> 4 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio4" value="4" checked> 4 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="5" checked> 5 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio5" value="5" checked> 5 
                </label>
             </div>
           </form>
@@ -232,27 +300,27 @@
           <form action="/action_page.php">
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="1" checked> 1 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio1" value="1" checked> 1 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="2" checked> 2 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio2" value="2" checked> 2 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="3" checked> 3 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio3" value="3" checked> 3 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="4" checked> 4 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio4" value="4" checked> 4 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="5" checked> 5 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio5" value="5" checked> 5 
                </label>
             </div>
           </form>
@@ -264,27 +332,27 @@
           <form action="/action_page.php">
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="1" checked> 1 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio1" value="1" checked> 1 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="2" checked> 2 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio2" value="2" checked> 2 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="3" checked> 3 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio3" value="3" checked> 3 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="4" checked> 4 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio4" value="4" checked> 4 
                </label>
             </div>
             <div class="form-check-inline">
                <label class="form-check-label">
-                 <input class="form-check-input" type="radio" name="exampleRadio" id="scoreRadio" value="5" checked> 5 
+                 <input class="form-check-input" type="radio" name="score-button" id="scoreRadio5" value="5" checked> 5 
                </label>
             </div>
           </form>
@@ -292,6 +360,14 @@
       </tr>
     </tbody>
   </table>
+  
+  <div id="comment-area" class="form-row">
+     <div class="col-md-8 mb-3">
+    <label for="comment">COMMENT:</label>
+    <textarea class="form-control" id="comment-sec" rows="5" placeholder="Write your comment..."></textarea>
+     </div>
+  </div>
+  <br>
   
   <div class="row justify-content-right submit">
     <button type="submit" class="btn btn-outline-light btn-lg">

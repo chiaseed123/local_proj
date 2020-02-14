@@ -24,7 +24,7 @@ body {
   position: absolute;
   color: #000000;
   font-size: 20px;
-  left: 25px;
+  left: 5%;
 }
 
 .input-group {
@@ -57,18 +57,75 @@ body {
 }
 
 .form-group {
-  margin-left: 20%;
+  margin-left: auto;
+}
+
+.ficon {
+  position: absolute;
+  color: #000000;
+  font-size: 23px;
+  margin-left: 5px;
+  margin-top:  6px;
+}
+
+.form-control {
+  width: 100%;
+  padding-left: 7%;
+}
+
+.form-control-1{
+  width: 100%;
 }
 
 .form-check-inline {
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
 .form-caption{
   padding-right: 50px;
 }
 
-.exampleRadio {
+.contact{
+	padding: 4%;
+	height: 400px;
+}
+.col-md-4{
+	background: #EC8C1A;
+	padding: 3%;
+}
+
+.contact-info{
+	margin-top:10%;
+}
+
+.contact-info img{
+	margin-bottom: 15%;
+}
+.contact-info h2{
+	margin-bottom: 10%;
+}
+
+.col-md-8{
+	background: #fff;
+	padding-left: 2%;
+  padding-top: 8%;
+}
+
+.contact-form label{
+	font-weight:600;
+}
+
+.contact-form button{
+	background: #00264d;
+	color: #fff;
+	width: 20%;
+}
+
+.contact-form button:focus{
+	box-shadow:none;
+}
+
+.score-button {
   margin:  auto;
 }
 
